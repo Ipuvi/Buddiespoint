@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Buddiespoint</title>
+
+    <!-- Page styles -->
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0\css\font-awesome.min.css">   
+    <link rel="stylesheet" type="text/css" href="source\material.css">
+    <link rel="stylesheet" type="text/css" href="project.css"> 
+    <link rel="stylesheet" type="text/css" href="source\style.css">
+    <link rel="stylesheet" type="text/css" href="source\bootstrap.css">
+
+
+  <!--carousal-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  </head>
+  <body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <div class="bp-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <span class="bp-title mdl-layout-title">
+          <img class="bp-logo-image" src="image\home-logo.png">
+        </span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="mdl-layout-spacer"></div>
+        <div class="bp-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+            <img src="image\icons\search.png">
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" onkeypress="searching()" id="search-field">
+          </div>
+        </div>
+          <!-- Navigation -->
+         <div class="bp-navigation-container">
+           <nav class="bp-navigation mdl-navigation">
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Home_project.html">Home</a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="profile.html">Profile</a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="chat.html"><span class="mdl-badge mdl-badge" data-badge="2"> Chat</span></a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="project_learn.html">Learn</a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="project_bussiness.html">Business</a>
+           </nav>
+         </div>
+         <span class="bp-mobile-title mdl-layout-title">
+           <img class="bp-logo-image" src="image\home-logo.png">
+         </span>
+         <button class="bp-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+           <img src="image\icons\vertical.png">
+         </button>
+         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+           <a href="general.html"><li class="mdl-menu__item">Setting</li></a>
+           <a href="about.html"><li class="mdl-menu__item">About</li></a>
+           <a href="index.html"><li class="mdl-menu__item">Logout</li></a>
+         </ul>
+       </div>
+     </div>
+
+
+<!--Above the fold content start-->
+
+      <div class="bp-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="bp-logo-image" src="image\logo.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="Home_project.html">Home</a>
+          <a class="mdl-navigation__link" href="profile.html">Profile</a>
+          <a class="mdl-navigation__link" href="chat.html">Chat</a>
+          <a class="mdl-navigation__link" href="project_learn.html">Learn</a>
+          <a class="mdl-navigation__link" href="project_bussiness.html">Business</a>
+          <div class="bp-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="general.html">Setting</a>
+          <a class="mdl-navigation__link" href="about.html">About</a>
+          <a class="mdl-navigation__link" href="index.html">Logout</a>
+        </nav>
+      </div>
+      
+<div class="mdl-layout__content">
+<div class="fluid-container">
+  
+  <div class="row" id="home">
+    
+      <!--Profile section starts here-->
+      
+      <div id="profile" class="col-md-2.5">
+      <div id="abc">
+                <img src="image/1.jpg" id="box1">
+                <div id="box2">
+              <img src="image/dp.png" id="image" alt="Ipuvi">
+              <p id="name">
+                     Welcome!Ipuvi!<br/>
+                <a href="Profile.html" class="links_p">Update Profile</a>
+                </p>
+                <hr/ class="hr_p">
+                </div>
+                <div id="box3">
+              <p id="friend"> 
+              250 Friends!<br/>
+              <a href="" class="links_p">Go to Friendlist</a>
+              <hr/ class="hr_p">
+              </p>
+                </div>
+                <div id="box4">
+                <p id="views" title="2 people recently viewed your profile">
+                2 Views!<br/>
+                <a href="" class="links_p">See Views</a>
+                <hr/ class="hr_p">
+                </p>
+                </div>
+                <div id="box5">
+                <p id="groups">
+                Groups!<br/>
+                <a href="" class="links_p">Joined 5 Groups</a>
+                <hr/ class="hr_p">
+                </p>
+                </div>
+                <div id="box6">
+                <p id="pages">
+                Pages!<br/>
+                <a href="" class="links_p">Liked 15 Pages</a>
+                <hr/ class="hr_p">
+                </p>
+                </div>
+                <div id="box7">
+                <p id="saved">
+                Saved!<br/>
+                <a href="" class="links_p">15 Videos &amp; 5 stories</a>
+                </p>
+                </div> 
+        </div>      
+        </div>
+
+
+ <!--News feed section starts here-->
+
+        <div id="news_feeds" class="col-md-5.6">
+            <div id="post">
+            <div id="create_post">
+                <a href="image/ic_create_black_24dp_1x.png" class="name"><img src="image/ic_create_black_24dp_1x.png" width="20px" height="20px">
+                Create a Post</a>
+                <a href="image/ic_photo_album_black_24dp_1x.png" class="name">
+                 <img src="image/ic_photo_album_black_24dp_1x.png" width="20px" height="20px">
+                 Photo Album</a>
+                </div>
+                <div class="write_post">
+                <div class="row">
+                <div class="col-md-2">
+                <img src="image/post.jpg" width="75px" height="80px" style="float:left; margin-top: 10px; margin-left: 10px;line-height: 0;"></div>
+                
+                <div class="col-md-10"><input type="textbox" id="textbox1" placeholder="What's on your mind!!!" style="width: 100%;height: 100%"></div>
+                </div></div>
+                <div id="tag_add">
+                  <a href="" class="name">
+                  <img src="image/ic_location_on_black_24dp_1x.png" id="tag" alt="tag" width="20px" height="20px">Add location</a>
+                  <a href="" class="name">
+                  <img src="image/ic_photo_album_black_24dp_1x.png" id="feeling" alt="feeling" width="20px" height="20px">Add Photos</a>
+                  <a href="" class="name">
+                  <img src="image/smile.png" width="20px" height="20px">Tag faces</a>
+                </div>
+                <div id="post1">
+                  <p>
+                  <a href="image/p1.jpg"><img src="image/p1.jpg" class="user"></a><a class="name"><b>Rowhit Swami</b></a> shared the<a class="name">Lovely Professional University's </a>post.
+                  22hrs ago.
+                    </p>
+                    <a href="image/post2.jpg"><img src="image/post2.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <a href=""><img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px"></a>
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post2">
+                     <p>
+                  <a href="image/p2.jpg"><img src="image/p2.jpg" class="user"></a><a class="name"><b>Sri Poojitha Chavali</b></a> liked <a class="name">Laughing Color's </a>photo.
+                  18hrs ago.
+                    </p>
+                    <a href="image/post3.jpg"><img src="image/post3.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post3">
+                <p>
+                  <a href="image/post.jpg"><img src="image/post.jpg" class="user"></a><a class="name"><b>Ipuvi Mishra</b></a> updated her<a class="name">Cover photo.</a>
+                  5hrs ago.
+                    </p>
+                    <a href="image/post1.jpg"><img src="image/post1.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post4">
+                 <p>
+                  <a href="image/p4.png"><img src="image/p4.png" class="user"></a><a class="name"><b>Power of Positivity</b></a> shared the<a class="name">post.</a>
+                  15hrs ago.
+                    </p>
+                    <a href="image/post6.jpg"><img src="image/post6.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post5">
+                 <p>
+                  <a href="image/user/3.jpg"><img src="image/user/3.jpg" class="user"></a><a class="name"><b>Prashant Singh Mangat</b></a> shared the<a class="name">Helping Hand club's </a>video.
+                  Yesterday.
+                    </p>
+                    <a href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhelpinghandsclubs%2Fvideos%2F1856844407886561%2F&show_text=0&width=560"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhelpinghandsclubs%2Fvideos%2F1856844407886561%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post6">
+                <p>
+                  <a href="image/user/4.jpg"><img src="image/user/4.jpg" class="user"></a><a class="name"><b>Prashant Choudary</b></a> upated his status<a class="name"></a>
+                  22hrs ago.
+                    </p>
+                    <p style="margin-left: 15px;">Good morninng guyzzz..:-):-)</p>
+                    <a href="image/post7.jpg"><img src="image/post7.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 5px; margin-bottom: 0px;">
+                    <!--<div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>-->
+                </div>
+                <div id="post7">
+                <p>
+                  <a href="image/user/1.jpg"><img src="image/user/1.jpg" class="user"></a><a class="name"><b>Prashant Saini</b></a> shared the photo.<a class="name"></a>
+                  an hour ago.
+                    </p>
+                    <a href="image/post4.jpg"><img src="image/post4.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post8">
+                <p>
+                  <a href="image/user/5.jpg"><img src="image/user/5.jpg" class="user"></a><a class="name"><b>Jaspal Prajapati</b></a> shared the<a class="name"> Sweet dish's </a>photo..
+                  22hrs ago.
+                    </p>
+                    <a href="image/post5.jpg"><img src="image/post5.jpg" class="posts"></a>
+                    <hr/ class="hr_n1">
+                   <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post9">
+                <p>
+                  <a href="image/p1.jpg"><img src="image/p1.jpg" class="user"></a><a class="name"><b>Rowhit Swami</b></a> shared the<a class="name">Lovely Professional University's </a>post.
+                  22hrs ago.
+                    </p>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FIamSafianRafsan%2Fvideos%2F1093472514052731%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" class="posts"></iframe>
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="post10">
+                <p>
+                  <a href="image/post.jpg"><img src="image/post.jpg" class="user"></a><a class="name"><b>Ipuvi Mishra</b></a> shared the<a class="name">Gr8 ppl,Gr8 thoughts </a>post.
+                  22hrs ago.
+                    </p>
+                    <img src="image/post8.jpg" class="posts">
+                    <hr/ class="hr_n1">
+                    <a href=""><img src="image/ic_thumb_up_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Like</a>
+                    <a href=""><img src="image/ic_comment_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Comment</a>
+                    <a href=""><img src="image/ic_share_black_24dp_1x.png"  width="20px" height="20px" style="margin-left: 15px; margin-right: 5px;">Share</a>
+                    <hr/ style="margin-top: 3px; margin-bottom: 0px;">
+                    <div class="comment">
+                      <img src="image/post.jpg" width="30px" height="30px" style="margin-left: 15px; margin-right: 10px">
+                      <input type="textbox" name="comments" class="textbox2" placeholder="Write a comment..." style="margin-top: 10px;">
+                    </div>
+                </div>
+                <div id="more_stories">
+                   <a href="" style="color: #909497;" id="more_stories"><br />More Stories</a>
+                </div>
+                </div>
+        </div>
+
+
+
+        <!--Advertisements and suggestion section starts here-->
+
+       <div id="right" class="col-md-3.9">
+        <div id="ad">
+        <div id="ad_box">
+        <p><img src="image/voonik.jpg" width="30px" height="30px" style="margin-left: 15px;margin-top: 15px;">
+        <a href="" class="a_s_name">Voonik.com</a><br/>
+       <p style="padding-left: 15px;">Get your Favourite Trends only on Voonik!!Quality Product!!<br/>Widest Collection!!
+        <i>#Har Din Fashion Karo..</i><input type="button" name="Shop Now" value="Shop Now" class="a_s_button"></p></p>
+
+        <div id="carouselAdControls" class="carousel slide" data-ride="carousel" style="margin-left: 55px;margin-right: 55px;margin-bottom: -20px">
+          <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+           <img class="d-block img-fluid" src="image/h_a.jpg" alt="First slide"><br/>   
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_a_1.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_a_2.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_a_3.jpg" width="200px" height="400px" alt="Fourth slide" style="margin-left: 55px;" >
+          </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselAdControls" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselAdControls" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+          </a>
+          </div>
+          
+          
+        </div>
+        </div>
+
+        <div id="suggestion">
+        <div id="suggest_box">
+        <p style="padding-left: 15px;padding-top: 15px;">
+          <a href="" class="a_s_name">Suggested Pages</a>
+          <input type="button" name="Like Page" value="Like Page" class="a_s_button" style="float: right; margin-right: 30px;">
+        </p>
+          
+        <div id="carouselSuggestionControls" class="carousel slide" data-ride="carousel" style=" margin-top:40px;margin-right: 60px; margin-bottom: 20px; margin-left:70px;">
+          <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="d-block img-fluid" src="image/h_s.jpg" alt="First slide" height="150%" class="img_s" >
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_s_1.jpg" alt="Second slide" class="img_s">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_s_2.jpg" alt="Third slide" class="img_s">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_s_3.jpg" alt="Fourth slide" class="img_s">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_s_4.jpg" alt="Fifth slide" class="img_s">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_s_5.jpg" alt="Sixth slide" class="img_s">
+          </div>
+          <div class="carousel-item">
+           <img class="d-block img-fluid" src="image/h_s_6.jpg" alt="Seventh slide" class="img_s">
+          </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselSuggestionControls" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselSuggestionControls" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+          </a>
+          </div>
+
+        </div>
+        </div>
+
+        </div>
+  </div>
+</div>
+
+
+
+<!--Above the fold content end-->
+
+<footer id="main-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+      <img src="image\home-logo.png">
+      <br>
+      <br>
+        &copy; 2017 Buddiespoint, No rights reserved!
+        <br>
+        Designed &amp; Developed by <a href="https://www.github.com/rowhitswami/"><i class="fa fa-github fa-2x" aria-hidden="true"></i> Rowhit Swami, Ipuvi Mishra &amp; Prashant Saini</a>
+        <br>
+        Made with <i class="fa fa-heart fa-2x" aria-hidden="true"></i> with Bootstrap &amp; Material Design Lite  <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-2">
+        <h5>Navigate</h5>
+        <ul class="list-unstyled">
+          <li><a href="Home_project.html">Home</li></a>
+          <li><a href="profile.html">Profile</li></a>
+          <li><a href="chat.html">Chat</li></a>
+          <li><a href="project_bussiness.html">Business</li></a>
+          <li><a href="project_learn.html">Learn</li></a>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>About</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About Us</li></a>
+          <li><a href="">Highlights</li></a>
+          <li><a href="">Investors</li></a>
+          <li><a href="">Press</li></a>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Connect with us!</h5>
+        <ul class="list-unstyled">
+          <li><a href="">Jobs</li></a>
+          <li><a href="">Interships</li></a>
+          <li><a href="">Contacts</li></a>
+          <li><a href="">FAQs</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script type="text/javascript" src="source\JavaScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Chat</title>
+
+    <!-- Page styles -->
+    <link rel="shortcut icon" href="image\favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="source\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="source\material.css">
+    <link rel="stylesheet" type="text/css" href="source\style.css">
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="bp-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="bp-title mdl-layout-title">
+            <img class="bp-logo-image" src="image\home-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="mdl-layout-spacer"></div>
+          <div class="bp-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <img src="image\icons\search.png">
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" onkeypress="searching()" id="search-field">
+            </div>
+          </div>
+           <!-- Navigation -->
+         <div class="bp-navigation-container">
+           <nav class="bp-navigation mdl-navigation">
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Home_project.html">Home</a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="profile.html">Profile</a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="chat.html"><span class="mdl-badge mdl-badge" data-badge="2"> Chat</span></a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="project_learn.html">Learn</a>
+             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="project_bussiness.html">Business</a>
+           </nav>
+         </div>
+          <span class="bp-mobile-title mdl-layout-title">
+            <img class="bp-logo-image" src="image\home-logo.png">
+          </span>
+          <button class="bp-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <img src="image\icons\vertical.png">
+          </button>
+           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+              <a href="..\general.html"><li class="mdl-menu__item">Setting</li></a>
+              <a href="..\about.html"><li class="mdl-menu__item">About</li></a>
+              <a href="..\index.html"><li class="mdl-menu__item">Logout</li></a>
+           </ul>
+        </div>
+      </div>
+
+
+    
+<!--Above the fold content start-->
+
+      <div class="bp-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="bp-logo-image" src="image\logo.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="Home_project.html">Home</a>
+          <a class="mdl-navigation__link" href="profile.html">Profile</a>
+          <a class="mdl-navigation__link" href="chat.html">Chat</a>
+          <a class="mdl-navigation__link" href="project_learn.html">Learn</a>
+          <a class="mdl-navigation__link" href="project_bussiness.html">Business</a>
+          <div class="bp-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="general.html">Setting</a>
+          <a class="mdl-navigation__link" href="about.html">About</a>
+          <a class="mdl-navigation__link" href="index.html">Logout</a>
+        </nav>
+      </div>
+      <div class="mdl-layout__content">
+        
+<!--Chat Area Start-->
+<section class="fluid-container">
+    <div class="row">
+    <!--Chat Box Start-->
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 chat-outline-first">
+            <p class="chat-heading-1">Incoming Chats</p>
+          </div>
+        <div style="width: 100%; height: 512px; overflow-y: scroll; overflow-x: hidden;">
+          <div class="col-md-12 chat-outline">
+         <span>
+          <div class="row">
+            <div class="col-md-4 chat-img">
+              <img src="image\user\1.jpg">
+            </div>
+             <div class="col-md-8">
+              <h6><b>Prashant Saini</b></h6>
+                <p class="user-message">I'm playing Games bro..</p>
+                <p class="time"><img src="image\timer-pink.png"> About a minute ago</p>
+            </div>
+          </div>
+         </span>
+          </div>
+          <div class="col-md-12 chat-outline">
+           <span>
+            <div class="row">
+              <div class="col-md-4 chat-img">
+                <img src="image\user\2.jpg">
+              </div>
+               <div class="col-md-8">
+                <h6><b>Ipuvi Mishra</b></h6>
+                  <p class="user-message">hdd hai yar</p>
+                  <p class="time"><img src="image\timer-pink.png"> 2 hours ago</p>
+              </div>
+            </div>
+           </span>
+          </div>
+          <div class="col-md-12 chat-outline">
+          <span>
+           <div class="row">
+             <div class="col-md-4 chat-img">
+               <img src="image\user\3.jpg">
+             </div>
+              <div class="col-md-8">
+               <h6><b>Prashant Singh Mangat</b></h6>
+                 <p class="user-message">chal bhai prank banaate hain</p>
+                 <p class="time"><img src="image\timer-pink.png"> 6 hours ago</p>
+             </div>
+           </div>
+          </span>
+          </div>
+          <div class="col-md-12 chat-outline">
+            <span>
+             <div class="row">
+               <div class="col-md-4 chat-img">
+                 <img src="image\user\4.jpg">
+               </div>
+                <div class="col-md-8">
+                 <h6><b>Dheeraj Goyal</b></h6>
+                   <p class="user-message">space me jayega tera bhai :D</p>
+                   <p class="time"><img src="image\timer-pink.png"> Yesterday</p>
+               </div>
+             </div>
+            </span>
+          </div>
+          <div class="col-md-12 chat-outline">
+            <span>
+             <div class="row">
+               <div class="col-md-4 chat-img">
+                 <img src="image\user\5.jpg">
+               </div>
+                <div class="col-md-8">
+                 <h6><b>Prashant Choudhary</b></h6>
+                   <p class="user-message">niche aa jao</p>
+                   <p class="time"><img src="image\timer-pink.png"> Yesterday</p>
+               </div>
+             </div>
+            </span>
+          </div>
+          <div class="col-md-12 chat-outline-last">
+            <span>
+              <div class="row">
+                <div class="col-md-4 chat-img">
+                  <img src="image\user\6.jpg">
+                </div>
+                 <div class="col-md-8">
+                  <h6><b>Jaspal Prajapati</b></h6>
+                    <p class="user-message">mai nhi aa rha</p>
+                    <span><p class="time"><img src="image\timer-pink.png"> 31 March</p></span>
+                </div>
+              </div>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--Chat Box End-->
+      <!--Message Box Start-->
+      <div class="col-md-7  mdl-shadow--3dp" >
+        <div class="row">
+          <div class="col-md-12 chat-outline-first">
+            <div class="col-md-8 ">
+              <p class="chat-heading">Chat with Prashant Saini</p>
+            </div>
+            <div class="col-md-2 media">
+            <a class="mdl-button mdl-js-button mdl-button--icon" href="">
+              <img src="image\phone.png" width="28px" height="28px">
+            </a>
+            </div>
+            <div class="col-md-2 media">
+            <a class="mdl-button mdl-js-button mdl-button--icon" href="">
+              <img src="image\video.png" width="28px" height="28px">
+            </a>
+            </div>            </div>
+          </div>
+      <!--Message Box End-->
+      <div  class="chat-scroll">
+        <div class="row">
+          <!--start-->
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <!--end-->
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row friend-message">
+              <div class="col-md-1 message-photo"><img src="image\user\1.jpg"></div>
+              <div class="col-md-11 message-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed reiciendis distinctio nostrum at magnam, a tenetur, corrupti </p></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row my-message">
+              <div class="col-md-11 col-md-offset-1 message-text-1"><p>consectetur placeat tempore ex rerum, fugiat facere praesentium ipsum. A quasi aut, voluptatibus.</p></div>
+              <div class="col-md-1 message-photo"><img src="image\user\rowhit.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- input text start-->
+      <div>
+       <textarea rows="4" cols="95" placeholder="Type your message here..."></textarea>
+      </div>
+     <!-- input text end -->
+    <div class="row" style="padding-bottom: 10px; padding-top: 10px;">
+      <div class="col-md-5">
+       <span class="col-md-2 media-icons"><img src="image\icons\camera.png"></span>
+       <span class="col-md-2 media-icons"><img src="image\icons\photo.png"></span>
+       <span class="col-md-2 media-icons"><img src="image\icons\doc.png"></span>
+       <span class="col-md-2 media-icons"><img src="image\icons\attach.png"></span>
+       <span class="col-md-2 media-icons"><img src="image\icons\smile.png"></span>
+       <span class="col-md-2 media-icons"><img src="image\icons\voice.png"></span>
+      </div>
+      <div class="col-md-5"></div>
+      <div class="col-md-2">
+        <span class="send-btn"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Send</button></span>
+      </div>
+    </div>
+    </div>
+<!--Message Box End-->
+<!--User Box Start-->
+      <div align="center" class="col-md-2 mdl-shadow--2dp" style="background-color: #f5f5f5; height: 574px;">
+       <div class="row">
+         <div class="col-md-12 user-img "><img class="mdl-shadow--16dp" src="image\user\1.jpg"></div>
+       </div>
+       <div  class="row">
+         <div class="col-md-12" ><h5 class="name">Prashant Saini</h5><br><h6 id="user-info" class="small">psaini6008@gmail.com</h6></div>
+       </div>
+       <div class="row">
+         <div class="col-md-12" ><h5 id="user-info" class="small">Lovely Professional University</h5></div>
+       </div>
+       <div class="row">
+         <div class="col-md-12"><a id="user-info" class="btn btn-primary  btn-block"><span class="fa fa-pencil-square-o"></span> Edit</a></div>
+       </div>
+       <div class="row">
+         <div class="col-md-12"><a id="user-info" class="btn btn-success btn-block"><span class="fa fa-check"></span> Friend</a></div>
+       </div>
+       <div class="row">
+         <div class="col-md-12"><a id="user-info" class="btn btn-danger btn-block" href="#">
+  <i class="fa fa-ban"></i> Block</a></div>
+       </div>
+      </div>
+<!--User Box End-->
+
+    </div>
+</section>
+
+
+
+<!-- Chat Area End-->
+
+
+      </div>
+ </div>  
+    <script src="source\mdl\material.min.js"></script>
+  </body>
+</html>
